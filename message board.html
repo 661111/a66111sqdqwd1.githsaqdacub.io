@@ -4,6 +4,8 @@
 		<meta charset="utf-8" />
 		<title>Li Shu's site</title>
 		<link href="img/title.ico" rel="shortcut icon"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+		<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 		<style type="text/css">
 			html{
 				position: relative;
@@ -178,7 +180,7 @@
 				width: 850px;
 				height: 850px;
 				border-radius: 20px;
-				background:rgba(250,250,250,0.5);
+				background:rgba(250,250,250,0.8);
 				opacity: 0.8;
 			}
 			.center iframe{
@@ -249,8 +251,22 @@
 					</ul>
 				</div>
 				<div class="center">
-					<iframe src="article.html" width="850px" height="850px" frameborder="0" scrolling="auto" name="frame"></iframe>
-				</div>
+					<div id="gitalk-container">
+					<h2>留言板</h2>
+					<script>
+					  const gitalk = new Gitalk({
+					  clientID: '8152985d6e636394e46c',
+					  clientSecret: '750716bcb745850797268c81d32c064f008e98da',
+					  repo: 'gitalk',
+					  owner: 'YLiShu',
+					  admin: ['YLiShu'],
+					  id: 'https://ylishu.github.io/message board.html',
+					  title: 'Gitalk',
+					  distractionFreeMode: false
+					})
+					gitalk.render('gitalk-container')
+					</script>   
+					</div>
 			</div>
 		<div class="bottom">
 			<p id="showtime1" title="我们的征途是星辰大海">哈雷彗星的约定：</p>
