@@ -9,7 +9,7 @@
 			html{
 				font-family: "华文新魏";
 			}
-			.head{
+			#gitalk-container{
 				width: 830px;
 				height: 360px;
 				border: 2px solid white;
@@ -17,71 +17,14 @@
 				border-radius: 20px;
 				position: relative;
 			}
-			.head h2{
+			#gitalk-container h2{
 				position:absolute;
 				left: 30px;
-			}
-			.head input:first-of-type{
-				position: absolute;
-				height:35px;
-				width: 200px;
-				top: 60px;
-				left: 40px;
-				border-radius: 15px;
-				font-family: "华文新魏";
-				font-size: large;
-				outline: none;
-			}
-			.head input:nth-of-type(2){
-				position: absolute;
-				height:35px;
-				width: 200px;
-				top: 60px;
-				left: 310px;
-				border-radius: 15px;
-				font-family: "华文新魏";
-				font-size: large;
-				outline: none;
-			}
-			.head input:nth-of-type(3){
-				position: absolute;
-				height:35px;
-				width: 200px;
-				top: 60px;
-				left: 580px;
-				border-radius: 15px;
-				font-family: "华文新魏";
-				font-size: large;
-				outline: none;
-			}
-			.head textarea{
-				position: absolute;
-				height:180px;
-				width: 745px;
-				top: 110px;
-				left: 40px;
-				border-radius: 15px;
-				font-family: "华文新魏";
-				font-size: large;
-				resize: none;
-				outline: none;
-			}
-			.head input:last-of-type
-			{
-				width: 80px;
-				height: 30px;
-				position: absolute;
-				bottom: 10px;
-				right: 40px;
-				border-radius: 10px;
-				font-family: "华文新魏";
-				font-size: large;
-				background-color: white;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="head">
+		<div id="gitalk-container">
 			<h2>留言板</h2>
 			<script>
 			var gitalk = new Gitalk({
@@ -95,9 +38,6 @@
 			})
 			gitalk.render('gitalk-container')
 			</script>
-		</div>
-		<div id="gitalk-container">
-			
 		</div>
 	</body>
 </html>
