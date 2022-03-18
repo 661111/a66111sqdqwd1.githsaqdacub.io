@@ -83,26 +83,21 @@
 	<body>
 		<div class="head">
 			<h2>留言板</h2>
-			<input type="text" value="🖊️用户名："/>
-			<input type="text" value="📧邮箱："/>
-			<input type="text" value="📲验证码："/>
-			<textarea></textarea>
-			<input type="submit" value="发表"/>
+			<script>
+			var gitalk = new Gitalk({
+			  clientID: '8152985d6e636394e46c',
+			  clientSecret: 'efbbc2e6ee3497a66d2b7fe5aaedb0e81f132570',
+			  repo: 'YLiShu.github.io',      
+			  owner: 'YLiShu',
+			  admin: ['YLiShu'],
+			  id: 'https://ylishu.github.io/article.html',
+			  distractionFreeMode: false
+			})
+			gitalk.render('gitalk-container')
+			</script>
 		</div>
 		<div id="gitalk-container">
-			
+			<
 		</div>
-		<script>
-		var gitalk = new Gitalk({
-		  clientID: '8152985d6e636394e46c',
-		  clientSecret: 'efbbc2e6ee3497a66d2b7fe5aaedb0e81f132570',
-		  repo: 'YLiShu.github.io',      
-		  owner: 'YLiShu',
-		  admin: ['YLiShu'],
-		  id: 'https://ylishu.github.io/article.html',
-		  distractionFreeMode: false
-		})
-		gitalk.render('gitalk-container')
-		</script>
 	</body>
 </html>
