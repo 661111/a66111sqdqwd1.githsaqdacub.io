@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   		<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+		<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 		<style type="text/css">
 			html{
 				font-family: "华文新魏";
@@ -30,11 +31,11 @@
 			var gitalk = new Gitalk({
 			  clientID: '8152985d6e636394e46c',
 			  clientSecret: 'efbbc2e6ee3497a66d2b7fe5aaedb0e81f132570',
-			  repo: 'YLiShu.github.io',      
+			  repo: 'gitalk',      
 			  owner: 'YLiShu',
 			  admin: ['YLiShu'],
 			  id: 'https://ylishu.github.io/article.html',
-			  distractionFreeMode: false
+			  distractionFreeMode: true
 			})
 			gitalk.render('gitalk-container')
 			</script>
