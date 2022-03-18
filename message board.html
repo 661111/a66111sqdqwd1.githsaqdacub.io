@@ -219,6 +219,21 @@
 				height: 85px;
 			}
 		</style>
+		<div id="container"></div>
+		<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+		<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+		<script>
+		var gitment = new Gitment({
+		  id: 'location.href', // 可选。默认为 location.href
+		  owner: 'YLiShu',
+		  repo: '存储评论的 repo',
+		  oauth: {
+		    client_id: '3edf4ebf5ebaf404e478',
+		    client_secret: '9aec62b27e826f0b7cd1000cd0cd9056363c4190',
+		  },
+		})
+		gitment.render('container')
+</script>
 	</head>
 	<body>
 		<div class="top">
